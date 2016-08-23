@@ -1,0 +1,329 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000; }
+
+.vortex-throbber {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); }
+  .vortex-throbber.hide {
+    display: none; }
+
+.vortex-throbber-body {
+  position: relative;
+  width: 150px;
+  height: 150px; }
+  .vortex-throbber-body:after {
+    content: "";
+    position: absolute;
+    top: 47%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    letter-spacing: 2px;
+    animation: throbber-text 1.5s infinite linear; }
+  .vortex-throbber-body div {
+    position: absolute; }
+    .vortex-throbber-body div:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 15px solid;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 100%;
+      animation: spin 3.5s infinite linear; }
+  .vortex-throbber-body div:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    top: calc(50% - (150px/2));
+    left: calc(50% - (150px/2));
+    transform: rotate(70deg); }
+    .vortex-throbber-body div:nth-child(1):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: calc(50% - (150px/2));
+    left: calc(50% - (150px/2));
+    transform: rotate(140deg); }
+    .vortex-throbber-body div:nth-child(2):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(3) {
+    width: 150px;
+    height: 150px;
+    top: calc(50% - (150px/2));
+    left: calc(50% - (150px/2));
+    transform: rotate(210deg); }
+    .vortex-throbber-body div:nth-child(3):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(4) {
+    width: 140px;
+    height: 140px;
+    top: calc(50% - (140px/2));
+    left: calc(50% - (140px/2));
+    transform: rotate(280deg); }
+    .vortex-throbber-body div:nth-child(4):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(5) {
+    width: 140px;
+    height: 140px;
+    top: calc(50% - (140px/2));
+    left: calc(50% - (140px/2));
+    transform: rotate(350deg); }
+    .vortex-throbber-body div:nth-child(5):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(6) {
+    width: 140px;
+    height: 140px;
+    top: calc(50% - (140px/2));
+    left: calc(50% - (140px/2));
+    transform: rotate(420deg); }
+    .vortex-throbber-body div:nth-child(6):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(7) {
+    width: 130px;
+    height: 130px;
+    top: calc(50% - (130px/2));
+    left: calc(50% - (130px/2));
+    transform: rotate(490deg); }
+    .vortex-throbber-body div:nth-child(7):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(8) {
+    width: 130px;
+    height: 130px;
+    top: calc(50% - (130px/2));
+    left: calc(50% - (130px/2));
+    transform: rotate(560deg); }
+    .vortex-throbber-body div:nth-child(8):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(9) {
+    width: 130px;
+    height: 130px;
+    top: calc(50% - (130px/2));
+    left: calc(50% - (130px/2));
+    transform: rotate(630deg); }
+    .vortex-throbber-body div:nth-child(9):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(10) {
+    width: 120px;
+    height: 120px;
+    top: calc(50% - (120px/2));
+    left: calc(50% - (120px/2));
+    transform: rotate(700deg); }
+    .vortex-throbber-body div:nth-child(10):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(11) {
+    width: 120px;
+    height: 120px;
+    top: calc(50% - (120px/2));
+    left: calc(50% - (120px/2));
+    transform: rotate(770deg); }
+    .vortex-throbber-body div:nth-child(11):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(12) {
+    width: 120px;
+    height: 120px;
+    top: calc(50% - (120px/2));
+    left: calc(50% - (120px/2));
+    transform: rotate(840deg); }
+    .vortex-throbber-body div:nth-child(12):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(13) {
+    width: 110px;
+    height: 110px;
+    top: calc(50% - (110px/2));
+    left: calc(50% - (110px/2));
+    transform: rotate(910deg); }
+    .vortex-throbber-body div:nth-child(13):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(14) {
+    width: 110px;
+    height: 110px;
+    top: calc(50% - (110px/2));
+    left: calc(50% - (110px/2));
+    transform: rotate(980deg); }
+    .vortex-throbber-body div:nth-child(14):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(15) {
+    width: 110px;
+    height: 110px;
+    top: calc(50% - (110px/2));
+    left: calc(50% - (110px/2));
+    transform: rotate(1050deg); }
+    .vortex-throbber-body div:nth-child(15):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(16) {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - (100px/2));
+    left: calc(50% - (100px/2));
+    transform: rotate(1120deg); }
+    .vortex-throbber-body div:nth-child(16):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(17) {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - (100px/2));
+    left: calc(50% - (100px/2));
+    transform: rotate(1190deg); }
+    .vortex-throbber-body div:nth-child(17):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(18) {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - (100px/2));
+    left: calc(50% - (100px/2));
+    transform: rotate(1260deg); }
+    .vortex-throbber-body div:nth-child(18):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(19) {
+    width: 90px;
+    height: 90px;
+    top: calc(50% - (90px/2));
+    left: calc(50% - (90px/2));
+    transform: rotate(1330deg); }
+    .vortex-throbber-body div:nth-child(19):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(20) {
+    width: 90px;
+    height: 90px;
+    top: calc(50% - (90px/2));
+    left: calc(50% - (90px/2));
+    transform: rotate(1400deg); }
+    .vortex-throbber-body div:nth-child(20):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(21) {
+    width: 90px;
+    height: 90px;
+    top: calc(50% - (90px/2));
+    left: calc(50% - (90px/2));
+    transform: rotate(1470deg); }
+    .vortex-throbber-body div:nth-child(21):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(22) {
+    width: 80px;
+    height: 80px;
+    top: calc(50% - (80px/2));
+    left: calc(50% - (80px/2));
+    transform: rotate(1540deg); }
+    .vortex-throbber-body div:nth-child(22):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(23) {
+    width: 80px;
+    height: 80px;
+    top: calc(50% - (80px/2));
+    left: calc(50% - (80px/2));
+    transform: rotate(1610deg); }
+    .vortex-throbber-body div:nth-child(23):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(24) {
+    width: 80px;
+    height: 80px;
+    top: calc(50% - (80px/2));
+    left: calc(50% - (80px/2));
+    transform: rotate(1680deg); }
+    .vortex-throbber-body div:nth-child(24):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(25) {
+    width: 70px;
+    height: 70px;
+    top: calc(50% - (70px/2));
+    left: calc(50% - (70px/2));
+    transform: rotate(1750deg); }
+    .vortex-throbber-body div:nth-child(25):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(26) {
+    width: 70px;
+    height: 70px;
+    top: calc(50% - (70px/2));
+    left: calc(50% - (70px/2));
+    transform: rotate(1820deg); }
+    .vortex-throbber-body div:nth-child(26):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(27) {
+    width: 70px;
+    height: 70px;
+    top: calc(50% - (70px/2));
+    left: calc(50% - (70px/2));
+    transform: rotate(1890deg); }
+    .vortex-throbber-body div:nth-child(27):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(28) {
+    width: 60px;
+    height: 60px;
+    top: calc(50% - (60px/2));
+    left: calc(50% - (60px/2));
+    transform: rotate(1960deg); }
+    .vortex-throbber-body div:nth-child(28):after {
+      border-color: rgba(225, 73, 56, 0.35);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(29) {
+    width: 60px;
+    height: 60px;
+    top: calc(50% - (60px/2));
+    left: calc(50% - (60px/2));
+    transform: rotate(2030deg); }
+    .vortex-throbber-body div:nth-child(29):after {
+      border-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.6; }
+  .vortex-throbber-body div:nth-child(30) {
+    width: 60px;
+    height: 60px;
+    top: calc(50% - (60px/2));
+    left: calc(50% - (60px/2));
+    transform: rotate(2100deg); }
+    .vortex-throbber-body div:nth-child(30):after {
+      border-color: rgba(250, 197, 28, 0.25);
+      opacity: 0.6; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translateZ(1px); }
+  100% {
+    transform: rotate(360deg) translateZ(1px); } }
+
+@keyframes throbber-text {
+  50% {
+    opacity: 0.7; } }
